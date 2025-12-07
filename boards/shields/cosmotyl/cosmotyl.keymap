@@ -14,8 +14,8 @@
                 &kp SPACE &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI &kp SQT
                 &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHFT
                 &kp LCTRL &kp LALT &kp LBKT &kp RBKT           &kp MINUS &kp EQUAL &kp RALT &kp RCTRL
-                &kp SPACE &mo 1 &kp DEL &kp LGUI &kp LCTRL &kp LALT
-                &kp RETURN &mo 2 &kp BACKSPACE &kp RGUI &kp RCTRL &kp ESC>;
+                &kp SPACE &mo 1 &kp DEL &kp LALT &kp LCTRL &kp LGUI
+                &kp RETURN &mo 2 &kp BACKSPACE &kp ESC &kp RCTRL &kp RGUI>;
         };
 
         layer-1 {
@@ -25,7 +25,8 @@
                 &kp SPACE &kp LEFT_ARROW &kp UP_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &kp G &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &kp SEMI &kp SQT
                 &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHFT
                 &studio_unlock &kp SPACE &kp RBKT &kp LBKT           &kp LBKT &kp RBKT &kp SPACE &kp RCTRL
-                &kp SPACE &kp SPACE &kp DEL &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp BACKSPACE &studio_unlock &kp SPACE &kp SPACE>;
+                &kp SPACE &mo 1 &kp DEL &kp LGUI &kp LCTRL &kp LALT
+                &kp RETURN &mo 2 &kp BACKSPACE &kp RGUI &kp RCTRL &kp ESC>;
         };
 
         layer-2 {
@@ -35,7 +36,8 @@
                 &kp SPACE &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI &kp SQT
                 &studio_unlock &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHFT
                 &studio_unlock &kp SPACE &kp RBKT &kp LBKT           &kp LBKT &kp RBKT &kp SPACE &kp RCTRL
-                &kp SPACE &kp SPACE &kp DEL &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp BACKSPACE &studio_unlock &kp SPACE &kp SPACE>;
+                &kp SPACE &mo 1 &kp DEL &kp LGUI &kp LCTRL &kp LALT
+                &kp RETURN &mo 2 &kp BACKSPACE &kp RGUI &kp RCTRL &kp ESC>;
         };
 
         extra1 {
