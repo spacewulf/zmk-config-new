@@ -20,13 +20,13 @@
 
         layer-1 {
             display-name = "Layer 1";
-            bindings = <&kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp ESC
-                &kp TAB &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp BSLH
-                &kp CAPS &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI &kp SQT
+            bindings = <&kp F12 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
+                &kp TAB &kp Q &kp C_NEXT &kp C_PLAY_PREV &kp C_PREV &kp T &kp Y &kp U &kp I &kp O &kp P &kp C_VOLUME_UP
+                &kp CAPS &kp LEFT_ARROW &kp UP_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &kp G &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &kp SEMI &kp C_VOLUME_DOWN
                 &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                &kp LCTRL &kp LALT &kp LBKT &kp RBKT           &kp MINUS &kp EQUAL &kp RALT &kp RCTRL
-                &kp SPACE &mo 1 &kp DEL &kp LALT &kp LCTRL &kp LGUI
-                &kp RETURN &mo 2 &kp BACKSPACE &kp ESC &kp RCTRL &kp RGUI>;
+                &kp LCTRL &kp LALT &kp RBKT &kp LBKT           &kp MINUS &kp EQUAL &kp RALT &kp RCTRL
+                &kp SPACE &mo 1 &kp DEL &kp LGUI &kp LCTRL &kp LALT
+                &kp RETURN &bt BT_CLR_ALL &kp BACKSPACE &kp RGUI &kp RCTRL &kp ESC>;
         };
 
         layer-2 {
