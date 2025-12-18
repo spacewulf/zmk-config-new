@@ -1,0 +1,16 @@
+
+    XF86AudioNext allow-when-locked=true {
+        spawn-sh "playerctl next";
+    }
+    
+    XF86AudioPrev allow-when-locked=true {
+        spawn-sh "playerctl previous";
+    }
+
+    XF86AudioPlay allow-when-locked=true {
+        spawn-sh "playerctl play-pause";
+    }
+
+    XF86AudioPause allow-when-locked=true {
+        spawn-sh "playerctl play-pause";
+    }
