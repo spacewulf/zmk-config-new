@@ -1,0 +1,14 @@
+!.envrc
+.build
+.direnv
+.west
+modules
+firmware
+zmk
+draw/base.yaml
+draw/overview.yaml
+cosmos-zmk-module
+zmk-auto-layer
+zmk-helpers
+zmk-leader-key
+zmk-unicode

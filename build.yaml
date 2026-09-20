@@ -18,3 +18,10 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+include:
+  - board: nice_nano//zmk
+    shield: spacemos_left
+  - board: nice_nano//zmk
+    shield: spacemos_right
+  - board: nice_nano//zmk
+    shield: settings_reset
