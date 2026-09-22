@@ -1,72 +1,52 @@
-# manifest:
-#   defaults:
-#     revision: v0.3
-#   remotes:
-#     - name: zmkfirmware
-#       url-base: https://github.com/zmkfirmware
-#     # Additional modules containing boards/shields/custom code can be listed here as well
-#     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
-#   projects:
-#     - name: zmk
-#       remote: zmkfirmware
-#       import: app/west.yml
-#   self:
-#     path: config
-
 manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # - name: urob
-    #   url-base: https://github.com/urob
-    # - name: vzhny
-    #   url-base: https://github.com/vzhny
-    # - name: rianadon
-    #   url-base: https://github.com/rianadon
-    # - name: dhruvinsh
-    #   url-base: https://github.com/dhruvinsh
+    - name: urob
+      url-base: https://github.com/urob
+    - name: vzhny
+      url-base: https://github.com/vzhny
+    - name: rianadon
+      url-base: https://github.com/rianadon
+    - name: dhruvinsh
+      url-base: https://github.com/dhruvinsh
 
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: 9ebbeff0a8b69a42f14aec022cdf16c7a107b9e0
-      # path: modules/firmware/zmk
       import: app/west.yml
-    # - name: zmk
-    #   remote: rianadon
-    #   revision: 4fc05c26b8faa35081282d58abc84fb6bd1b52bd
-    #   import: app/west.yml
-    # - name: zmk-unicode
-    #   remote: urob
-    #   revision: 5f458b6f1fd8ca83f4aba793c2a64916522507e9
-    #   path: modules/zmk/unicode
-    #
-    # - name: zmk-auto-layer
-    #   remote: urob
-    #   revision: 62c201934711369d50a28df12e1d055d05cb6460
-    #   path: modules/zmk/auto-layer
-    #
-    # - name: zmk-helpers
-    #   remote: urob
-    #   revision: 4c71f803db34f5b888a1d09ef699e8e58d03f393
-    #   path: modules/zmk/helpers
-    #
-    # - name: zmk-leader-key
-    #   remote: urob
-    #   revision: 43029f6fb950dec382774e60c6bcc020a906c942
-    #   path: modules/zmk/leader-key
-    #
-    # - name: cosmos-zmk-module
-    #   remote: rianadon
-    #   revision: d76327385ea269b1450888c574c05ccab22beee6
-    #   path: modules/zmk/cosmos
-    #   import: config/west.yml
-    #
-    # - name: zmk-tri-state
-    #   remote: dhruvinsh
-    #   revision: ebbc1f0ccdb51669650bb0ac3e34920d09e62400
-    #   path: modules/zmk/tri-state
-    #
+    - name: zmk-unicode
+      remote: urob
+      revision: 5f458b6f1fd8ca83f4aba793c2a64916522507e9
+      path: modules/zmk/unicode
+
+    - name: zmk-auto-layer
+      remote: urob
+      revision: 62c201934711369d50a28df12e1d055d05cb6460
+      path: modules/zmk/auto-layer
+
+    - name: zmk-helpers
+      remote: urob
+      revision: 4c71f803db34f5b888a1d09ef699e8e58d03f393
+      path: modules/zmk/helpers
+
+    - name: zmk-leader-key
+      remote: urob
+      revision: 43029f6fb950dec382774e60c6bcc020a906c942
+      path: modules/zmk/leader-key
+
+    - name: cosmos-zmk-module
+      remote: rianadon
+      revision: d76327385ea269b1450888c574c05ccab22beee6
+      path: modules/zmk/cosmos
+      import: config/west.yml
+
+    - name: zmk-tri-state
+      remote: dhruvinsh
+      revision: ebbc1f0ccdb51669650bb0ac3e34920d09e62400
+      path: modules/zmk/tri-state
+
     - name: zephyr
       remote: zmkfirmware
       revision: 10ba6d0cb38bc3d258775d27982f707599320085
@@ -84,33 +64,3 @@ manifest:
 
   self:
     path: config
-
-# manifest:
-#   remotes:
-#     - name: zmkfirmware
-#       url-base: https://github.com/zmkfirmware
-#     - name: rianadon
-#       url-base: https://github.com/rianadon
-#     - name: urob
-#       url-base: https://github.com/urob
-#
-#   projects:
-#     - name: zmk
-#       remote: rianadon
-#       revision: 4fc05c26b8faa35081282d58abc84fb6bd1b52bd
-#       import: app/west.yml
-#
-#     - name: zmk-unicode
-#       remote: urob
-#       revision: v0.3
-#
-#     - name: zmk-helpers
-#       remote: urob
-#       revision: v0.3
-#
-#     - name: zmk-leader-key
-#       remote: urob
-#       revision: v0.3
-#
-#   self:
-#     path: config

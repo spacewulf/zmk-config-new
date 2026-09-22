@@ -1,11 +1,2 @@
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-
-/ {
-  keymap {
-    compatible = "zmk,keymap";
-    default_layer {
-      bindings = <&kp A &kp B &kp C &kp D &kp E &kp F &kp G &kp H &kp I &kp J &kp K &kp L &kp M &kp N &kp O &kp P &kp Q &kp R &kp S &kp T &kp U &kp V &kp W &kp X &kp Y &kp Z &kp N0 &kp N1 &kp N2 &kp N3 &kp N4 &kp A &kp B &kp C &kp D &kp E &kp F &kp G &kp H &kp I &kp J &kp K &kp L &kp M &kp N &kp O &kp P &kp Q &kp R &kp S &kp T &kp U &kp V &kp W &kp X &kp Y &kp Z &kp N0 &kp N1 &kp N2 &kp N3 &kp N4>;
-    };
-  };
-};
+#include "spacemos62.h"
+#include "base.keymap"
