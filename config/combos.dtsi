@@ -1,0 +1,53 @@
+#define COMBO_TERM_FAST 18
+#define COMBO_TERM_SLOW 30
+
+#define COMBO_IDLE_FAST 150
+#define COMBO_IDLE_SLOW 50
+
+/*                      Current Layout
+   ╭─────────────────────────┬─────────────────────────╮
+   │ LN5 LN4 LN3 LN2 LN1 LN0 │ RN0 RN1 RN2 RN3 RN4 RN5 │
+   │ LT5 LT4 LT3 LT2 LT1 LT0 │ RT0 RT1 RT2 RT3 RT4 RT5 │
+   │ LM5 LM4 LM3 LM2 LM1 LM0 │ RM0 RM1 RM2 RM3 RM4 RM5 │
+   │ LB5 LB4 LB3 LB2 LB1 LB0 │ RB0 RB1 RB2 RB3 RB4 RB5 │
+   │         LF1 LF0         │         RF0 RF1         │
+   ╰───────────╮ LH2 LH1 LH0 │ RH0 RH1 RH2 ╭───────────╯
+               ╰───╮ LH4 LH3 │ RH3 RH4 ╭───╯
+                   ╰─────────┴─────────╯             */
+
+// Right Hand: Escape (J K)
+/* ZMK_COMBO(esc, &kp ESC, RM1 RM2, BASE NAV NUM SYS, COMBO_TERM_FAST, COMBO_IDLE_FAST) */
+// Left Hand: Leader
+ZMK_COMBO(ldr, &leader, LH2 LH1, BASE NAV NUM SYS GAMING, COMBO_TERM_FAST, COMBO_IDLE_FAST,
+          LS(LCTRL), KEYS_R)
+
+// Mouse
+ZMK_COMBO(mouse, &smart_mouse, LN2 LN1, BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+// Right Hand Horizontal Combos
+ZMK_COMBO(lpar, &lpar_lt, RT1 RT2, BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(rpar, &rpar_gt, RT2 RT3, BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+ZMK_COMBO(lbkt, &kp LBKT, RM1 RM2, BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(rbkt, &kp RBKT, RM2 RM3, BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+ZMK_COMBO(lbrc, &kp LBRC, RB1 RB2, BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(rbrc, &kp RBRC, RB2 RB3, BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+/* // Right Hand: Brackets and Parentheses */
+/* ZMK_COMBO(lpr, &kp LPAR, RN1 RT1, BASE NAV NUM SYS, COMBO_TERM_FAST, */
+/*           COMBO_IDLE_FAST) */
+/* ZMK_COMBO(rpr, &kp RPAR, RN2 RT2, BASE NAV NUM SYS, COMBO_TERM_FAST, */
+/*           COMBO_IDLE_FAST) */
+/* ZMK_COMBO(lbk, &kp LBKT, RT1 RM1, BASE NAV NUM SYS, COMBO_TERM_FAST, */
+/*           COMBO_IDLE_FAST) */
+/* ZMK_COMBO(rbk, &kp RBKT, RT2 RM2, BASE NAV NUM SYS, COMBO_TERM_FAST, */
+/*           COMBO_IDLE_FAST) */
+/* ZMK_COMBO(lbc, &kp LBRC, RM1 RB1, BASE NAV NUM SYS, COMBO_TERM_FAST, */
+/*           COMBO_IDLE_FAST) */
+/* ZMK_COMBO(rbc, &kp RBRC, RM2 RB2, BASE NAV NUM SYS, COMBO_TERM_FAST, */
+/*           COMBO_IDLE_FAST) */
+
+ // Both Hand Combos
+ZMK_COMBO(nlr, &tog 0, LH2 RH2, BASE NAV NUM SYS, COMBO_TERM_FAST,
+          COMBO_IDLE_FAST)

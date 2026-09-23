@@ -14,8 +14,9 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: 9ebbeff0a8b69a42f14aec022cdf16c7a107b9e0
+      revision: 268b1b1e82150460f00fd701bcd08583d5c75d29
       import: app/west.yml
+
     - name: zmk-unicode
       remote: urob
       revision: 5f458b6f1fd8ca83f4aba793c2a64916522507e9

@@ -1,5 +1,5 @@
 // clang-format off
-/*                                      68 KEY MATRIX / LAYOUT MAPPING
+/*                                      62 KEY MATRIX / LAYOUT MAPPING
 
   ╭────────────────────────┬────────────────────────╮ ╭─────────────────────────┬─────────────────────────╮
   │  0   1   2   3   4   5 │  6   7   8   9  10  11 │ │ LN5 LN4 LN3 LN2 LN1 LN0 │ RN0 RN1 RN2 RN3 RN4 RN5 │
